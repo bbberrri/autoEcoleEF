@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNum = new System.Windows.Forms.TextBox();
@@ -41,6 +42,8 @@
             this.lblCreditHoraire = new System.Windows.Forms.Label();
             this.lblDateInscription = new System.Windows.Forms.Label();
             this.cmbCredit = new System.Windows.Forms.ComboBox();
+            this.bdgSourceEleve = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -63,6 +66,7 @@
             // 
             // txtNum
             // 
+            this.txtNum.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdgSourceEleve, "id", true));
             this.txtNum.Location = new System.Drawing.Point(105, 35);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(100, 20);
@@ -70,6 +74,7 @@
             // 
             // txtNom
             // 
+            this.txtNom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdgSourceEleve, "nom", true));
             this.txtNom.Location = new System.Drawing.Point(105, 70);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(100, 20);
@@ -77,6 +82,7 @@
             // 
             // txtPrenom
             // 
+            this.txtPrenom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdgSourceEleve, "prenom", true));
             this.txtPrenom.Location = new System.Drawing.Point(105, 109);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.Size = new System.Drawing.Size(100, 20);
@@ -84,6 +90,7 @@
             // 
             // txtAdresse
             // 
+            this.txtAdresse.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdgSourceEleve, "adresse", true));
             this.txtAdresse.Location = new System.Drawing.Point(105, 148);
             this.txtAdresse.Name = "txtAdresse";
             this.txtAdresse.Size = new System.Drawing.Size(100, 20);
@@ -91,6 +98,7 @@
             // 
             // dtInscription
             // 
+            this.dtInscription.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdgSourceEleve, "dateInscription", true));
             this.dtInscription.Location = new System.Drawing.Point(105, 188);
             this.dtInscription.Name = "dtInscription";
             this.dtInscription.Size = new System.Drawing.Size(200, 20);
@@ -143,11 +151,16 @@
             // 
             // cmbCredit
             // 
+            this.cmbCredit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdgSourceEleve, "creditHoraire", true));
             this.cmbCredit.FormattingEnabled = true;
             this.cmbCredit.Location = new System.Drawing.Point(105, 226);
             this.cmbCredit.Name = "cmbCredit";
             this.cmbCredit.Size = new System.Drawing.Size(121, 21);
             this.cmbCredit.TabIndex = 15;
+            // 
+            // bdgSourceEleve
+            // 
+            this.bdgSourceEleve.DataSource = typeof(autoEcoleEF.eleve);
             // 
             // FrmGererEleve
             // 
@@ -169,6 +182,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "FrmGererEleve";
             this.Text = "Gestion des élèves";
+            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +203,6 @@
         private System.Windows.Forms.Label lblCreditHoraire;
         private System.Windows.Forms.Label lblDateInscription;
         private System.Windows.Forms.ComboBox cmbCredit;
+        private System.Windows.Forms.BindingSource bdgSourceEleve;
     }
 }

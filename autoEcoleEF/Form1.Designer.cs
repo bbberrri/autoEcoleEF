@@ -30,13 +30,13 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichiersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.élèvesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.véhiculeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.leçonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.élèvesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.véhiculeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.leçonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.validerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -63,13 +63,26 @@
             this.fichiersToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichiersToolStripMenuItem.Text = "Fichier";
             // 
+            // quitterToolStripMenuItem
+            // 
+            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.quitterToolStripMenuItem.Text = "Quitter";
+            // 
             // élèvesToolStripMenuItem
             // 
             this.élèvesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gérerToolStripMenuItem});
+            this.gererToolStripMenuItem});
             this.élèvesToolStripMenuItem.Name = "élèvesToolStripMenuItem";
             this.élèvesToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.élèvesToolStripMenuItem.Text = "Élève";
+            // 
+            // gererToolStripMenuItem
+            // 
+            this.gererToolStripMenuItem.Name = "gererToolStripMenuItem";
+            this.gererToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gererToolStripMenuItem.Text = "Gérer";
+            this.gererToolStripMenuItem.Click += new System.EventHandler(this.gererToolStripMenuItem_Click_1);
             // 
             // véhiculeToolStripMenuItem
             // 
@@ -79,27 +92,6 @@
             this.véhiculeToolStripMenuItem.Name = "véhiculeToolStripMenuItem";
             this.véhiculeToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.véhiculeToolStripMenuItem.Text = "Véhicule";
-            // 
-            // leçonToolStripMenuItem
-            // 
-            this.leçonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajouterToolStripMenuItem,
-            this.validerToolStripMenuItem});
-            this.leçonToolStripMenuItem.Name = "leçonToolStripMenuItem";
-            this.leçonToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.leçonToolStripMenuItem.Text = "Leçon";
-            // 
-            // quitterToolStripMenuItem
-            // 
-            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.quitterToolStripMenuItem.Text = "Quitter";
-            // 
-            // gérerToolStripMenuItem
-            // 
-            this.gérerToolStripMenuItem.Name = "gérerToolStripMenuItem";
-            this.gérerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gérerToolStripMenuItem.Text = "Gérer";
             // 
             // gérerToolStripMenuItem1
             // 
@@ -112,6 +104,15 @@
             this.listeToolStripMenuItem.Name = "listeToolStripMenuItem";
             this.listeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listeToolStripMenuItem.Text = "Liste";
+            // 
+            // leçonToolStripMenuItem
+            // 
+            this.leçonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajouterToolStripMenuItem,
+            this.validerToolStripMenuItem});
+            this.leçonToolStripMenuItem.Name = "leçonToolStripMenuItem";
+            this.leçonToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.leçonToolStripMenuItem.Text = "Leçon";
             // 
             // ajouterToolStripMenuItem
             // 
@@ -148,7 +149,7 @@
         private System.Windows.Forms.ToolStripMenuItem fichiersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem élèvesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gérerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gererToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem véhiculeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gérerToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem listeToolStripMenuItem;

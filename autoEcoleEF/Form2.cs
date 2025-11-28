@@ -21,6 +21,7 @@ namespace autoEcoleEF
                 this.cmbCredit.Items.Add(i);
             }
             this.mesDonneesEF = mesDonneesEF;
+            this.bdgSourceEleve.DataSource = mesDonneesEF.eleves.ToList();
         }
 
         private void label1_Click(object sender, EventArgs e)

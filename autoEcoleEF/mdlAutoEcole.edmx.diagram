@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e7fef96f305e4fa8a87aa97108d80e34" Name="Diagram1" ZoomLevel="129">
+      <Diagram DiagramId="e7fef96f305e4fa8a87aa97108d80e34" Name="Diagram1" ZoomLevel="123">
         <EntityTypeShape EntityType="autoecoleEF.eleve" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="autoecoleEF.lecon" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="autoecoleEF.vehicule" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
