@@ -98,6 +98,7 @@
             this.gérerToolStripMenuItem1.Name = "gérerToolStripMenuItem1";
             this.gérerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.gérerToolStripMenuItem1.Text = "Gérer";
+            this.gérerToolStripMenuItem1.Click += new System.EventHandler(this.gérerToolStripMenuItem1_Click);
             // 
             // listeToolStripMenuItem
             // 
@@ -117,13 +118,13 @@
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             // 
             // validerToolStripMenuItem
             // 
             this.validerToolStripMenuItem.Name = "validerToolStripMenuItem";
-            this.validerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.validerToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.validerToolStripMenuItem.Text = "Valider";
             // 
             // FrmMenu

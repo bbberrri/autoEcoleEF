@@ -18,14 +18,19 @@ namespace autoEcoleEF
             InitializeComponent();
             this.mesDonneesEF = new autoecoleEntities();
         }
+        
         private void gererToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             FrmGererEleve f = new FrmGererEleve(this.mesDonneesEF);
-            //f.MdiParent = this;
             f.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gérerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
         }
