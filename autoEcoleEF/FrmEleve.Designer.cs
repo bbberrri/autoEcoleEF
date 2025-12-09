@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGererEleve));
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNum = new System.Windows.Forms.TextBox();
-            this.bdgSourceEleve = new System.Windows.Forms.BindingSource(this.components);
             this.txtNom = new System.Windows.Forms.TextBox();
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.txtAdresse = new System.Windows.Forms.TextBox();
@@ -56,9 +55,10 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.tsbEnregistrer = new System.Windows.Forms.ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).BeginInit();
+            this.bdgSourceEleve = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bdgNav)).BeginInit();
             this.bdgNav.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumero
@@ -79,10 +79,6 @@
             this.txtNum.ReadOnly = true;
             this.txtNum.Size = new System.Drawing.Size(100, 20);
             this.txtNum.TabIndex = 4;
-            // 
-            // bdgSourceEleve
-            // 
-            this.bdgSourceEleve.DataSource = typeof(autoEcoleEF.eleve);
             // 
             // txtNom
             // 
@@ -299,6 +295,10 @@
             this.tsbEnregistrer.Text = "Enregistrer";
             this.tsbEnregistrer.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // bdgSourceEleve
+            // 
+            this.bdgSourceEleve.DataSource = typeof(autoEcoleEF.eleve);
+            // 
             // FrmGererEleve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,10 +319,11 @@
             this.Controls.Add(this.lblNumero);
             this.Name = "FrmGererEleve";
             this.Text = "Gestion des élèves";
-            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).EndInit();
+            this.Load += new System.EventHandler(this.FrmGererEleve_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bdgNav)).EndInit();
             this.bdgNav.ResumeLayout(false);
             this.bdgNav.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdgSourceEleve)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

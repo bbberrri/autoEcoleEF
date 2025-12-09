@@ -32,7 +32,8 @@ namespace autoEcoleEF
 
         private void gérerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            FrmGererVehicule f = new FrmGererVehicule(this.mesDonneesEF);
+            f.Show();
         }
     }
 }

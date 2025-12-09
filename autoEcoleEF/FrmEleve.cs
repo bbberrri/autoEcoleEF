@@ -98,5 +98,10 @@ namespace autoEcoleEF
                 }
             }
         }
+
+        private void FrmGererEleve_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
